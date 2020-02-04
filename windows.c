@@ -27,7 +27,7 @@ if (!glfwInit())
 //else printf("successful\n");
 
 //double time = glfwGetTime();
-GLFWwindow* window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);
+GLFWwindow* window = glfwCreateWindow(1920, 1080, "My Title", NULL, NULL);
 glfwMakeContextCurrent(window);
 glfwSetKeyCallback(window, key_callback);
     while (!glfwWindowShouldClose(window))
@@ -53,4 +53,5 @@ glfwDestroyWindow(window);
 
 glfwTerminate();
 
+return 0;
 }
