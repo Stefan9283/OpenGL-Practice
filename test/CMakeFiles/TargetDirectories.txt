@@ -1,0 +1,3 @@
+/home/stefan/GIT/General/OPENGL/GLEW/test/CMakeFiles/rebuild_cache.dir
+/home/stefan/GIT/General/OPENGL/GLEW/test/CMakeFiles/testnr1.dir
+/home/stefan/GIT/General/OPENGL/GLEW/test/CMakeFiles/edit_cache.dir
