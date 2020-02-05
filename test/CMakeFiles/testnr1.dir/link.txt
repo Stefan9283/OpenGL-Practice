@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/testnr1.dir/src/glad.c.o CMakeFiles/testnr1.dir/main.c.o  -o testnr1 -lGL -lGLEW -lm -ldl -lglfw 
