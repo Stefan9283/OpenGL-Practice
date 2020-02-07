@@ -11,7 +11,9 @@ sudo apt-get install freeglut3-dev libglew-dev libglfw3-dev mesa-common-dev gcc 
 
 To compile type:
 $ cmake .
+
 $ make
+
 $ ./program
 
 WINDOWS:
