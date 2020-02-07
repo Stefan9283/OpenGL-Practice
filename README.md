@@ -7,6 +7,7 @@ TODO: add some description and run instructions for each dir
 LINUX:
 
 Install dependencies on GNU Linux using the following command:
+
 sudo apt-get install freeglut3-dev libglew-dev libglfw3-dev mesa-common-dev gcc g++
 
 To compile type:
