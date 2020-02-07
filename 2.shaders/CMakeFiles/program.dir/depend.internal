@@ -3,8 +3,8 @@
 
 CMakeFiles/program.dir/main.c.o
  ./include/linmath.h
- /home/stefan/GIT/OpenGL-Practice/ver1/main.c
+ /home/stefan/GIT/OpenGL-Practice/2.shaders/main.c
 CMakeFiles/program.dir/src/glad.c.o
  ./include/KHR/khrplatform.h
  ./include/glad/glad.h
- /home/stefan/GIT/OpenGL-Practice/ver1/src/glad.c
+ /home/stefan/GIT/OpenGL-Practice/2.shaders/src/glad.c

@@ -1,4 +1,4 @@
-# Install script for directory: /home/stefan/GIT/OpenGL-Practice/ver1
+# Install script for directory: /home/stefan/GIT/OpenGL-Practice/2.shaders
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stefan/GIT/OpenGL-Practice/ver1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/stefan/GIT/OpenGL-Practice/2.shaders/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

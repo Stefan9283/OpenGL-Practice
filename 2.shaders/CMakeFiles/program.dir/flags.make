@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/stefan/GIT/OpenGL-Practice/ver1/./include -I/usr/include/GL 
+C_INCLUDES = -I/home/stefan/GIT/OpenGL-Practice/2.shaders/./include -I/usr/include/GL 
 

@@ -1,0 +1,27 @@
+﻿  main.cpp
+main.obj : error LNK2019: unresolved external symbol __imp__glClear@4 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol __imp__glDrawArrays@12 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol __imp__glewInit@0 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _glfwTerminate referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _glfwCreateWindow referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _glfwWindowShouldClose referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _glfwPollEvents referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _glfwMakeContextCurrent referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _glfwSwapBuffers referenced in function _main
+main.obj : error LNK2001: unresolved external symbol __imp____glewBindBuffer
+main.obj : error LNK2001: unresolved external symbol __imp____glewBufferData
+main.obj : error LNK2001: unresolved external symbol __imp____glewGenBuffers
+main.obj : error LNK2001: unresolved external symbol __imp____glewAttachShader
+main.obj : error LNK2001: unresolved external symbol __imp____glewCompileShader
+main.obj : error LNK2001: unresolved external symbol __imp____glewCreateProgram
+main.obj : error LNK2001: unresolved external symbol __imp____glewCreateShader
+main.obj : error LNK2001: unresolved external symbol __imp____glewDeleteShader
+main.obj : error LNK2001: unresolved external symbol __imp____glewEnableVertexAttribArray
+main.obj : error LNK2001: unresolved external symbol __imp____glewLinkProgram
+main.obj : error LNK2001: unresolved external symbol __imp____glewShaderSource
+main.obj : error LNK2001: unresolved external symbol __imp____glewUseProgram
+main.obj : error LNK2001: unresolved external symbol __imp____glewValidateProgram
+main.obj : error LNK2001: unresolved external symbol __imp____glewVertexAttribPointer
+C:\OPENGL\Project1\\Dependencies\libs\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\OPENGL\Project1\Debug\Project1.exe : fatal error LNK1120: 24 unresolved externals

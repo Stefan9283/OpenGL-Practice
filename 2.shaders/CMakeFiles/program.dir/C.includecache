@@ -24,7 +24,7 @@ math.h
 string.h
 -
 
-/home/stefan/GIT/OpenGL-Practice/ver1/main.c
+/home/stefan/GIT/OpenGL-Practice/2.shaders/main.c
 GL/glew.h
 -
 GL/gl.h
@@ -38,7 +38,7 @@ stdlib.h
 stdio.h
 -
 
-/home/stefan/GIT/OpenGL-Practice/ver1/src/glad.c
+/home/stefan/GIT/OpenGL-Practice/2.shaders/src/glad.c
 stdio.h
 -
 stdlib.h

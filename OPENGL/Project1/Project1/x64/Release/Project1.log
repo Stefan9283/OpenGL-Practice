@@ -1,0 +1,17 @@
+﻿  main.cpp
+C:\OPENGL\Project1\Dependencies\include\linmath.h(62,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(63,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(64,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(341,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(372,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(372,16): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(594,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(600,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(611,51): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\OPENGL\Project1\Dependencies\include\linmath.h(611,20): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  Generating code
+  0 of 6 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Project1.vcxproj -> C:\OPENGL\Project1\x64\Release\Project1.exe

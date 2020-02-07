@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/stefan/GIT/OpenGL-Practice/ver1/main.c" "/home/stefan/GIT/OpenGL-Practice/ver1/CMakeFiles/program.dir/main.c.o"
-  "/home/stefan/GIT/OpenGL-Practice/ver1/src/glad.c" "/home/stefan/GIT/OpenGL-Practice/ver1/CMakeFiles/program.dir/src/glad.c.o"
+  "/home/stefan/GIT/OpenGL-Practice/2.shaders/main.c" "/home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles/program.dir/main.c.o"
+  "/home/stefan/GIT/OpenGL-Practice/2.shaders/src/glad.c" "/home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles/program.dir/src/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/program.dir/Dependencies/src/glad.c.o CMakeFiles/program.dir/Project1/main.cpp.o  -o program -lGL -lGLEW -lm -ldl -lglfw 

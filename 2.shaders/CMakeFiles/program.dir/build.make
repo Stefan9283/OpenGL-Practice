@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stefan/GIT/OpenGL-Practice/ver1
+CMAKE_SOURCE_DIR = /home/stefan/GIT/OpenGL-Practice/2.shaders
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stefan/GIT/OpenGL-Practice/ver1
+CMAKE_BINARY_DIR = /home/stefan/GIT/OpenGL-Practice/2.shaders
 
 # Include any dependencies generated for this target.
 include CMakeFiles/program.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/program.dir/flags.make
 
 CMakeFiles/program.dir/src/glad.c.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/glad.c.o: src/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stefan/GIT/OpenGL-Practice/ver1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/program.dir/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/program.dir/src/glad.c.o   -c /home/stefan/GIT/OpenGL-Practice/ver1/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/program.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/program.dir/src/glad.c.o   -c /home/stefan/GIT/OpenGL-Practice/2.shaders/src/glad.c
 
 CMakeFiles/program.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/program.dir/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stefan/GIT/OpenGL-Practice/ver1/src/glad.c > CMakeFiles/program.dir/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stefan/GIT/OpenGL-Practice/2.shaders/src/glad.c > CMakeFiles/program.dir/src/glad.c.i
 
 CMakeFiles/program.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/program.dir/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stefan/GIT/OpenGL-Practice/ver1/src/glad.c -o CMakeFiles/program.dir/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stefan/GIT/OpenGL-Practice/2.shaders/src/glad.c -o CMakeFiles/program.dir/src/glad.c.s
 
 CMakeFiles/program.dir/src/glad.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/program.dir/src/glad.c.o.provides.build: CMakeFiles/program.dir/src/g
 
 CMakeFiles/program.dir/main.c.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/main.c.o: main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stefan/GIT/OpenGL-Practice/ver1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/program.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/program.dir/main.c.o   -c /home/stefan/GIT/OpenGL-Practice/ver1/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/program.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/program.dir/main.c.o   -c /home/stefan/GIT/OpenGL-Practice/2.shaders/main.c
 
 CMakeFiles/program.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/program.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stefan/GIT/OpenGL-Practice/ver1/main.c > CMakeFiles/program.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stefan/GIT/OpenGL-Practice/2.shaders/main.c > CMakeFiles/program.dir/main.c.i
 
 CMakeFiles/program.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/program.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stefan/GIT/OpenGL-Practice/ver1/main.c -o CMakeFiles/program.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stefan/GIT/OpenGL-Practice/2.shaders/main.c -o CMakeFiles/program.dir/main.c.s
 
 CMakeFiles/program.dir/main.c.o.requires:
 
@@ -117,7 +117,7 @@ program: CMakeFiles/program.dir/src/glad.c.o
 program: CMakeFiles/program.dir/main.c.o
 program: CMakeFiles/program.dir/build.make
 program: CMakeFiles/program.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stefan/GIT/OpenGL-Practice/ver1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable program"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/program.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/program.dir/clean:
 .PHONY : CMakeFiles/program.dir/clean
 
 CMakeFiles/program.dir/depend:
-	cd /home/stefan/GIT/OpenGL-Practice/ver1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stefan/GIT/OpenGL-Practice/ver1 /home/stefan/GIT/OpenGL-Practice/ver1 /home/stefan/GIT/OpenGL-Practice/ver1 /home/stefan/GIT/OpenGL-Practice/ver1 /home/stefan/GIT/OpenGL-Practice/ver1/CMakeFiles/program.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/stefan/GIT/OpenGL-Practice/2.shaders && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stefan/GIT/OpenGL-Practice/2.shaders /home/stefan/GIT/OpenGL-Practice/2.shaders /home/stefan/GIT/OpenGL-Practice/2.shaders /home/stefan/GIT/OpenGL-Practice/2.shaders /home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles/program.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/program.dir/depend
 
