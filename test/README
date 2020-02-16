@@ -1,6 +1,0 @@
-	
-
-to compile run:
-
-	cmake .
-	make
