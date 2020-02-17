@@ -10,9 +10,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
+void delay(float seconds)
+{
+    long pause;
+    clock_t now,then;
 
-//https://www.youtube.com/watch?v=2pv0Fbo-7ms&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=8
+    pause = seconds*CLOCKS_PER_SEC;
+    now = then = clock();
+    while( (now-then) < pause )
+        now = clock();
+}
 
 typedef struct ShaderProgramSource
 {
@@ -53,12 +62,12 @@ static ShaderProgramSource ParseShader(const char* filepath)
 		}
 		memset(line, 0, 100);
 	}
-		source.vertexShader[strlen(source.vertexShader)-2]='\0';
-		source.fragmentShader[strlen(source.fragmentShader)-2]='\0';
-		puts(source.vertexShader);
+		source.vertexShader[strlen(source.vertexShader)]='\0';
+		source.fragmentShader[strlen(source.fragmentShader)]='\0';
+		/*puts(source.vertexShader);
 		printf("///////\n\n\n\n");
 		puts(source.fragmentShader);
-
+		*/
 	return source;
 }
 static unsigned int CompileShader(unsigned int type,const char* source)
@@ -94,7 +103,7 @@ int main(void)
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(640, 640, "Hello World", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -104,7 +113,9 @@ int main(void)
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
-
+   
+    glfwSwapInterval(1);
+   
     if(glewInit()!=GLEW_OK)
     	printf("glew!");
     
@@ -140,14 +151,48 @@ int main(void)
     unsigned int shader = CreateShader(source.vertexShader,source.fragmentShader);
     glUseProgram(shader);
     //puts(source.vertexShader);
+
+    int location = glGetUniformLocation(shader,"u_Color");
+
+    float r=0.0,g=0.0,b=0.4;
+    float r_pas=0.05,g_pas=0.05,b_pas=0.05;
+	//glUniform4f(location,r,g,b,1);
+    glUniform4f(location,r,g,b,1);
     int *nullptr=NULL;
+    
+    int fps=0;
+
+	
+    clock_t now,then;
+
+    now = then = clock();
+    
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
         /* Render here */
+    	 
         glClear(GL_COLOR_BUFFER_BIT);
 
+    	glUniform4f(location,r,g,b,1);
+        
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+        
+
+
+
+        if(r>=1)r_pas=-0.002f;
+        	else if(r<=0)r_pas=0.005f;
+        if(g>=1)g_pas=-0.004f;else if(g<=0)g_pas=0.007f;
+         
+        if(b>=1)b_pas=-0.005f;else if(b<=0)b_pas=0.006f;
+        //printf("%.3f %.3f %.3f \n",r,g,b);
+        r=r+r_pas;
+        g+=g_pas;
+        b+=b_pas;
+
+        
+		delay(0.01);
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
