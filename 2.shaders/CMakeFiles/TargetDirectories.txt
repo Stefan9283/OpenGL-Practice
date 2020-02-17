@@ -1,3 +1,0 @@
-/home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles/rebuild_cache.dir
-/home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles/program.dir
-/home/stefan/GIT/OpenGL-Practice/2.shaders/CMakeFiles/edit_cache.dir
