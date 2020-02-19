@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/C++
+CMAKE_SOURCE_DIR = /home/stefan/GIT/OpenGL-Practice/2.shaders/1.SimpleVersion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/C++
+CMAKE_BINARY_DIR = /home/stefan/GIT/OpenGL-Practice/2.shaders/1.SimpleVersion
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/C++/CMakeFiles /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/C++/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stefan/GIT/OpenGL-Practice/2.shaders/1.SimpleVersion/CMakeFiles /home/stefan/GIT/OpenGL-Practice/2.shaders/1.SimpleVersion/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/C++/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stefan/GIT/OpenGL-Practice/2.shaders/1.SimpleVersion/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testnr1
+# Target rules for targets named program
 
 # Build rule for target.
-testnr1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testnr1
-.PHONY : testnr1
+program: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 program
+.PHONY : program
 
 # fast build rule for target.
-testnr1/fast:
-	$(MAKE) -f CMakeFiles/testnr1.dir/build.make CMakeFiles/testnr1.dir/build
-.PHONY : testnr1/fast
+program/fast:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
+.PHONY : program/fast
 
-main.o: main.cpp.o
+main.o: main.c.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/testnr1.dir/build.make CMakeFiles/testnr1.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/main.c.o
+.PHONY : main.c.o
 
-main.i: main.cpp.i
+main.i: main.c.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/testnr1.dir/build.make CMakeFiles/testnr1.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/main.c.i
+.PHONY : main.c.i
 
-main.s: main.cpp.s
+main.s: main.c.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/testnr1.dir/build.make CMakeFiles/testnr1.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/main.c.s
+.PHONY : main.c.s
 
 src/glad.o: src/glad.c.o
 
@@ -156,7 +156,7 @@ src/glad.o: src/glad.c.o
 
 # target to build an object file
 src/glad.c.o:
-	$(MAKE) -f CMakeFiles/testnr1.dir/build.make CMakeFiles/testnr1.dir/src/glad.c.o
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/glad.c.o
 .PHONY : src/glad.c.o
 
 src/glad.i: src/glad.c.i
@@ -165,7 +165,7 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) -f CMakeFiles/testnr1.dir/build.make CMakeFiles/testnr1.dir/src/glad.c.i
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -174,7 +174,7 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) -f CMakeFiles/testnr1.dir/build.make CMakeFiles/testnr1.dir/src/glad.c.s
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
 # Help Target
@@ -184,7 +184,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... testnr1"
+	@echo "... program"
 	@echo "... edit_cache"
 	@echo "... main.o"
 	@echo "... main.i"

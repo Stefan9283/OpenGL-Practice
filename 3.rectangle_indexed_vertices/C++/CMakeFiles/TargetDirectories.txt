@@ -1,3 +1,0 @@
-/home/stefan/GIT/General_Repository/OPENGL/test/CMakeFiles/rebuild_cache.dir
-/home/stefan/GIT/General_Repository/OPENGL/test/CMakeFiles/testnr1.dir
-/home/stefan/GIT/General_Repository/OPENGL/test/CMakeFiles/edit_cache.dir
