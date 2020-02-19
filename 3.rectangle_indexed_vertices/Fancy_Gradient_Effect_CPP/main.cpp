@@ -210,6 +210,7 @@ int main(void)
        positions[23]=b;
 
 
+       /* updating the color in the vertex positions and colors array "positions" */
 	    glBindBuffer(GL_ARRAY_BUFFER,buffer); //binds buffer variable to the GPU buffer
 		glBufferData(GL_ARRAY_BUFFER,sizeof(positions),positions,GL_STATIC_DRAW); //passes vertex vector to GPU buffer
 
