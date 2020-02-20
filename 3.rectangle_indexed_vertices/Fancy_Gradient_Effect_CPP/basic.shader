@@ -4,8 +4,6 @@
 layout( location = 0 ) in vec4 positions;
 layout( location = 1 ) in vec3 aColor;
 
-
-
 out vec3 ourColor;
 
 void main()
