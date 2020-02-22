@@ -95,6 +95,7 @@ static unsigned int CreateShader(const char* vertexShader, const char* fragmentS
 	return program;
 }
 
+
 int main(void)
 {
     GLFWwindow* window;
