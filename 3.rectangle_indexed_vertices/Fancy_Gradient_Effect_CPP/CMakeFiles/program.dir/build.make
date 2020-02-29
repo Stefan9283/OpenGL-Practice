@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP
+CMAKE_SOURCE_DIR = /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP
+CMAKE_BINARY_DIR = /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP
 
 # Include any dependencies generated for this target.
 include CMakeFiles/program.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/program.dir/flags.make
 
 CMakeFiles/program.dir/src/glad.c.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/src/glad.c.o: src/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/program.dir/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/program.dir/src/glad.c.o   -c /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/program.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/program.dir/src/glad.c.o   -c /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c
 
 CMakeFiles/program.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/program.dir/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c > CMakeFiles/program.dir/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c > CMakeFiles/program.dir/src/glad.c.i
 
 CMakeFiles/program.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/program.dir/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c -o CMakeFiles/program.dir/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c -o CMakeFiles/program.dir/src/glad.c.s
 
 CMakeFiles/program.dir/src/glad.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/program.dir/src/glad.c.o.provides.build: CMakeFiles/program.dir/src/g
 
 CMakeFiles/program.dir/main.cpp.o: CMakeFiles/program.dir/flags.make
 CMakeFiles/program.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/program.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/main.cpp.o -c /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/program.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/main.cpp.o -c /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp
 
 CMakeFiles/program.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp > CMakeFiles/program.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp > CMakeFiles/program.dir/main.cpp.i
 
 CMakeFiles/program.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp -o CMakeFiles/program.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp -o CMakeFiles/program.dir/main.cpp.s
 
 CMakeFiles/program.dir/main.cpp.o.requires:
 
@@ -117,7 +117,7 @@ program: CMakeFiles/program.dir/src/glad.c.o
 program: CMakeFiles/program.dir/main.cpp.o
 program: CMakeFiles/program.dir/build.make
 program: CMakeFiles/program.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable program"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/program.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/program.dir/clean:
 .PHONY : CMakeFiles/program.dir/clean
 
 CMakeFiles/program.dir/depend:
-	cd /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles/program.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles/program.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/program.dir/depend
 

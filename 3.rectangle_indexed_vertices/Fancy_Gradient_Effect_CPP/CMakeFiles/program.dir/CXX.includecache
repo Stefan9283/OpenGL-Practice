@@ -12,7 +12,7 @@ math.h
 string.h
 -
 
-/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp
+/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp
 GL/glew.h
 -
 GL/gl.h

@@ -7,11 +7,11 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/./include -I/usr/include/GL 
+C_INCLUDES = -I/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/./include -I/usr/include/GL 
 
 CXX_FLAGS =  
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/./include -I/usr/include/GL 
+CXX_INCLUDES = -I/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/./include -I/usr/include/GL 
 

@@ -4,7 +4,7 @@
 CMakeFiles/program.dir/src/glad.c.o
  ./include/KHR/khrplatform.h
  ./include/glad/glad.h
- /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c
+ /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c
 CMakeFiles/program.dir/main.cpp.o
  ./include/linmath.h
- /home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp
+ /mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp

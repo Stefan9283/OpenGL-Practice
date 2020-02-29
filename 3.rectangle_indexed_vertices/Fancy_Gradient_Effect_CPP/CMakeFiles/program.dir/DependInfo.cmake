@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c" "/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles/program.dir/src/glad.c.o"
+  "/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c" "/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles/program.dir/src/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/GL"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp" "/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles/program.dir/main.cpp.o"
+  "/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/main.cpp" "/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/CMakeFiles/program.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

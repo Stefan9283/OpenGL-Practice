@@ -18,7 +18,7 @@ stdint.h
 KHR/khrplatform.h
 -
 
-/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c
+/mnt/d/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/Fancy_Gradient_Effect_CPP/src/glad.c
 stdio.h
 -
 stdlib.h
