@@ -1,0 +1,3 @@
+/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/C++/CMakeFiles/rebuild_cache.dir
+/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/C++/CMakeFiles/program.dir
+/home/stefan/GIT/OpenGL-Practice/3.rectangle_indexed_vertices/C++/CMakeFiles/edit_cache.dir
