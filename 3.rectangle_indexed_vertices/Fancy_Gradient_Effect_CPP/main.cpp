@@ -169,14 +169,6 @@ int main(void)
     unsigned int shader = CreateShader(source.vertexShader,source.fragmentShader);
     glUseProgram(shader);
 
-    int location = glGetAttribLocation(shader,"aColor");
-    printf("location %d\n",location);
-
-   
-    int *nullp=NULL;
-    
-    std :: string s = "Chestia asta merge doar in C++";
-    std :: cout << s << std :: endl ;
  
     
     /* Loop until the user closes the window */
@@ -191,24 +183,7 @@ int main(void)
         glDrawElements(GL_TRIANGLES, sizeof(indeces), GL_UNSIGNED_INT, nullptr);
         
 
-        if(r>=1)r_pas=-0.002f;
-            else if(r<=0)r_pas=0.005f;
-        if(g>=1)g_pas=-0.004f;
-        	else if(g<=0)g_pas=0.007f;
-        if(b>=1)b_pas=-0.005f;
-        	else if(b<=0)b_pas=0.006f;
-
-        //printf("%.3f %.3f %.3f \n",r,g,b);
-        
-       r+=r_pas;
-       g+=g_pas;
-       b+=b_pas;
-
-       positions[3]=r;
-       positions[11]=g;
-       positions[17]=b;
-       positions[23]=b;
-
+ 
 
        /* updating the color in the vertex positions and colors array "positions" */
 	    glBindBuffer(GL_ARRAY_BUFFER,buffer); //binds buffer variable to the GPU buffer
