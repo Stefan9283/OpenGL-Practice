@@ -1,12 +1,5 @@
-#include </usr/include/GLFW/glfw3.h>
 #include <stdio.h>
-
-/*
-static void error_callback(int error, const char* description)
-{
-    fprintf(stderr, "Error: %s\n", description);
-}
-*/
+#include "glfw3.h"
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
@@ -19,39 +12,31 @@ int main()
 {
 
 
-if (!glfwInit())
-{
-   printf("failed\n");
-    // Initialization failed
-}
-//else printf("successful\n");
+	if (!glfwInit())
+	{
+	   printf("failed\n");
+	}
 
-//double time = glfwGetTime();
-GLFWwindow* window = glfwCreateWindow(1920, 1080, "My Title", NULL, NULL);
-glfwMakeContextCurrent(window);
-glfwSetKeyCallback(window, key_callback);
+	GLFWwindow* window = glfwCreateWindow(400, 400, "My Title", NULL, NULL);
+	glfwMakeContextCurrent(window);
+	glfwSetKeyCallback(window, key_callback);
+
     while (!glfwWindowShouldClose(window))
 	{
 		int width, height;
 		glfwGetFramebufferSize(window, &width, &height);
-		glViewport(0, 0, width, height);
 		glfwSwapBuffers(window);
 		glfwSwapInterval(100);
 
 		glfwPollEvents();
 
-		//scanf("%d",&c);
 		if (!window)
-		{
-			   printf("failed\n");
-
-		    // Window or OpenGL context creation failed
-		}
-		//else printf("successful\n");
+			printf("failed\n");
 	}
-glfwDestroyWindow(window);
 
-glfwTerminate();
+	glfwDestroyWindow(window);
+
+	glfwTerminate();
 
 return 0;
 }
