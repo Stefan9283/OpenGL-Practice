@@ -1,3 +1,12 @@
 [submodule "1.windows/glfw"]
 	path = 1.windows/glfw
 	url = https://github.com/glfw/glfw
+[submodule "2.shaders/1.SimpleVersion/Dependencies/vendor/glad"]
+	path = 2.shaders/1.SimpleVersion/Dependencies/vendor/glad
+	url = https://github.com/Dav1dde/glad
+[submodule "2.shaders/1.SimpleVersion/Dependencies/vendor/glfw"]
+	path = 2.shaders/1.SimpleVersion/Dependencies/vendor/glfw
+	url = https://github.com/glfw/glfw
+[submodule "glad"]
+	path = glad
+	url = https://github.com/Dav1dde/glad
