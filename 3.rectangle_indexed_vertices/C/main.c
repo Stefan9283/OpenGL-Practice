@@ -1,12 +1,10 @@
 
 //#define GL_GLEXT_PROTOTYPES //it ignores all the warnings
-#include <GL/glew.h>
-#include <GL/gl.h>
+#include <glad/glad.h>
 
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 
-#include <linmath.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -36,6 +34,7 @@ static ShaderProgramSource ParseShader(const char* filepath)
 	FILE *f=fopen(filepath,"r");
 	char line[100];
 	int mode=0;
+    puts(filepath);
 	while(fgets(line,100,f))
 	{
 		line[strlen(line)-1]='\0';
@@ -117,9 +116,8 @@ int main(void)
    
     glfwSwapInterval(1);
    
-    if(glewInit()!=GLEW_OK)
-    	printf("glew!");
-    
+    gladLoadGL();
+
     float positions[]={
     	-0.5f, -0.5f,
     	 0.5f, -0.5f,
@@ -147,7 +145,7 @@ int main(void)
 
 
 
-    ShaderProgramSource source=ParseShader("basic.shader");
+    ShaderProgramSource source = ParseShader("shader");
 
     unsigned int shader = CreateShader(source.vertexShader,source.fragmentShader);
     glUseProgram(shader);

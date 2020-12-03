@@ -3,9 +3,8 @@
 
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
-#include <glad\glad.h>
+#include <glad/glad.h>
 
-#include "linmath.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -35,7 +34,6 @@ static unsigned int CreateShader(const char* vertexShader, const char* fragmentS
 	return program;
 }
 
-
 int main(void)
 {
     GLFWwindow* window;
@@ -52,7 +50,6 @@ int main(void)
         return -1;
     }
 
-
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
@@ -65,9 +62,7 @@ int main(void)
     	-0.5f, -0.5f,
     	 0.0f,  0.5f,
     	 0.5f, -0.5f
-
     };
-
 
     unsigned int buffer;
     glGenBuffers(1,&buffer); 
@@ -76,32 +71,27 @@ int main(void)
 
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0); //tells the GPU what the layout of the buffer is
-    
-
 
 	GLchar* vertexShader=
-	"#version 330 core\n"
-	"layout(location = 0 ) in vec4 positions;\n"
-	"void main()\n"
-	"{\n"
-	"gl_Position = positions;\n"
-	"}\n\0";
+	    "#version 330 core\n"
+	    "layout( location = 0 ) in vec2 positions;\n"
+	    "void main()\n"
+	    "{\n"
+	    "gl_Position = vec4(positions, 0, 1);\n"
+	    "}\n\0";
 		
-		
-		//printf("why\n");
 	GLchar* fragmentShader=
 		"#version 330 core\n"
 		"layout( location = 0 ) out vec4 color;\n"
 		"void main()\n"
 		"{\n"
-		"color = vec4( 0.0, 1.0, 0.0, 1.0 );\n"
+		"color = vec4( 0.0, 0.5, 0.0, 1.0 );\n"
 		"}\n\0";
 
 	
     unsigned int shader = CreateShader(vertexShader,fragmentShader);
 
     glUseProgram(shader);
-
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
