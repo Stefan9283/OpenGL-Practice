@@ -1,12 +1,10 @@
 
 //#define GL_GLEXT_PROTOTYPES //it ignores all the warnings
-#include <GL/glew.h>
-#include <GL/gl.h>
+#include <glad/glad.h>
 
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 
-#include <Dependencies/include/linmath.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -33,14 +31,15 @@ void delay(float seconds)
 
 typedef struct ShaderProgramSource
 {
-    char vertexShader[1000];
-    char fragmentShader[1000];
+    char vertexShader[10000];
+    char fragmentShader[10000];
 }ShaderProgramSource;
 
  ShaderProgramSource ParseShader(const char* filepath)
 {
     ShaderProgramSource source;
-
+    memset(source.vertexShader, 0, 10000);
+    memset(source.fragmentShader, 0, 10000);
     FILE *f=fopen(filepath,"r");
     char line[100];
     int mode=0;
@@ -49,14 +48,12 @@ typedef struct ShaderProgramSource
         line[strlen(line)-1]='\0';
         if(!strcmp("#shader vertex",line))
             {
-                memset(source.vertexShader, 0, 1000);
                 mode=0; 
                 continue;
             }
         else 
             if(!strcmp("#shader fragment",line))
             {
-                memset(source.fragmentShader, 0, 1000);
                 mode=1;
                 continue;
             }
@@ -131,8 +128,8 @@ int main(void)
    
     glfwSwapInterval(1);
    
-    if(glewInit()!=GLEW_OK)
-        printf("glew!");
+    if(gladLoadGL())
+        printf("Glad!");
     
      float r=0.6,g=0.6,b=0.6;
     float r_pas=0.05,g_pas=0.05,b_pas=0.05;

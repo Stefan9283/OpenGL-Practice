@@ -6,9 +6,10 @@
 #include <GLFW/glfw3.h>
 
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 #include <time.h>
+
+#include <stdio.h>
 
 void delay(float seconds)
 {
@@ -23,51 +24,52 @@ void delay(float seconds)
 
 typedef struct ShaderProgramSource
 {
-	char vertexShader[1000];
-	char fragmentShader[1000];
+	char vertexShader[10000];
+	char fragmentShader[10000];
 }ShaderProgramSource;
+
+#include <errno.h>
 
 static ShaderProgramSource ParseShader(const char* filepath)
 {
 	ShaderProgramSource source;
+    memset(source.fragmentShader, 0, 10000);
+    memset(source.vertexShader, 0, 10000);
+    errno = 0;
+	FILE *f = fopen(filepath,"r");
+    
+    if (f == NULL) {
+        printf("Error %d \n", errno);
+        printf("It's null\n");
+    } else {
+        char line[100];
+        int mode = 0;
+        while (fgets(line, 100, f)) {
 
-	FILE *f=fopen(filepath,"r");
-	char line[100];
-	int mode=0;
-    puts(filepath);
-	while(fgets(line,100,f))
-	{
-		line[strlen(line)-1]='\0';
-		if(!strcmp("#shader vertex",line))
-		{
-			mode=0;	
-			continue;
-		}
-		if(!strcmp("#shader fragment",line))
-		{
-			mode=1;
-			continue;
-		}
+            line[strlen(line) - 1] = '\0';
+           
+            if (!strcmp("#shader vertex", line))
+                mode = 0;
+            else if (!strcmp("#shader fragment", line))
+                mode = 1;
+            else if (mode == 0) {
+                strcat(source.vertexShader, line);
+                strcat(source.vertexShader, "\n");
+            } else if (mode == 1) {
+                strcat(source.fragmentShader, line);
+                strcat(source.fragmentShader, "\n");
+            }
 
-		if(!mode)
-		{
-			strcat(source.vertexShader,line);
-			strcat(source.vertexShader,"\n");
-		}
-			else
-		{
-			strcat(source.fragmentShader,line);
-			strcat(source.fragmentShader,"\n");
-		}
-		memset(line, 0, 100);
-	}
-		source.vertexShader[strlen(source.vertexShader)]='\0';
-		source.fragmentShader[strlen(source.fragmentShader)]='\0';
-		/*puts(source.vertexShader);
-		printf("///////\n\n\n\n");
-		puts(source.fragmentShader);
-		*/
-	return source;
+        }
+        fclose(f);
+        //puts(source.fragmentShader);
+        //puts(source.vertexShader);
+        source.vertexShader[strlen(source.vertexShader)] = '\0';
+        source.fragmentShader[strlen(source.fragmentShader)] = '\0';
+    }
+    
+	
+    return source;
 }
 static unsigned int CompileShader(unsigned int type,const char* source)
 {
@@ -94,9 +96,8 @@ static unsigned int CreateShader(const char* vertexShader, const char* fragmentS
 	return program;
 }
 
-
-int main(void)
-{
+int main() {
+    
     GLFWwindow* window;
     /* Initialize the library */
     if (!glfwInit())
